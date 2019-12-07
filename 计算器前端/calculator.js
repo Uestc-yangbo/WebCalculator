@@ -59,6 +59,7 @@ var Buttons = document.getElementsByClassName('calculator')[0],//按钮
                     text = text.replace('tan','t');
                     text = text.replace('^2','p');
                     text = text.replace('√','k');
+                    text = text.replace('(-','(0-');//处理负数情况
                     text = text.replace('^(-1)','d');
                 }
                 if(text[0]=='-')text = text.replace('-','0-');//这里处理第一个数为负数的情况
